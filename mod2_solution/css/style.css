@@ -1,13 +1,109 @@
 <style>
-* {
-		box-sizing: border-box;
-}
-
+ /********** Base styles **********/
 body {
-	margin: 0
-	padding: 0
-	background-color: gray;
+	margin: 0 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Sans-serif;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+.sections {
+	width:100%;
+	border: 1px solid black;
+	background-color: #777;
+	float: center;
+	margin-top: 1%;
+	overflow: hidden;
+	position: relative;
 }
 
 
+
+.header1, .header2, .header3 {
+	float:right;
+	border: 1px solid black;
+	padding: 5px 2em;
+	margin-bottom: .2em;
+	font-size: 1.25em;
+	font-weight: bold;
+	color:white;
+	text-align: center;
+	clear: both;
+}
+
+
+.header1{
+	background-color: #660000;
+
+}
+.header2 {
+	background-color: #006633;
+}
+
+.header3 {
+	background-color: #003366;
+}
+
+.descriptions {
+	color: white;
+	width:90%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	clear: both;
+
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+  overflow: hidden;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+ .col-lg-4 {
+    float: left;
+    margin: 1%;
+    display: table;
+    width: 31%;
+  }
+
+
+ .sections {
+   padding-bottom: 999px;
+   margin-bottom: -999px;
+   }
+ 
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    margin: 1%;
+   }
+
+    .second {
+   height: inherit;
+   overflow: hidden;
+   } 
+
+  .col-md-6 {
+    width: 48%;
+
+ }
+   .col-md-12 {
+    width: 98%;
+    margin-top:0;
+  }
+}
 </style>
